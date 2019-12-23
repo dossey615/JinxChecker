@@ -7,10 +7,17 @@
 //
 
 import SwiftUI
+import HealthKit
 
 struct ContentView: View {
+    var label:String = check()
+    let healthStore = HKHealthStore()
+    
     var body: some View {
-        Text("Hello, World!")
+        VStack{
+            Text("Hello, World!")
+            Text(label)
+        }
     }
 }
 
@@ -18,4 +25,12 @@ struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
     }
+}
+
+func check() -> String{
+    var result = "hoge"
+    if HKHealthStore.isHealthDataAvailable(){
+         result = "YES"
+    }
+    return result
 }

@@ -23,6 +23,7 @@
 		E32B1BD023B065BF008A6E84 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E32B1BCF23B065BF008A6E84 /* Assets.xcassets */; };
 		E32B1BD323B065BF008A6E84 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E32B1BD223B065BF008A6E84 /* Preview Assets.xcassets */; };
 		E32B1BE523B0661F008A6E84 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E32B1BE423B0661F008A6E84 /* HealthKit.framework */; };
+		E32B1BE923B06C29008A6E84 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E32B1BE823B06C29008A6E84 /* HealthKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +90,9 @@
 		E32B1BD423B065BF008A6E84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E32B1BE223B0661F008A6E84 /* JinxChecker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = JinxChecker.entitlements; sourceTree = "<group>"; };
 		E32B1BE423B0661F008A6E84 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		E32B1BE623B067FE008A6E84 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		E32B1BE723B06C29008A6E84 /* JinxChecker WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "JinxChecker WatchKit Extension.entitlements"; sourceTree = "<group>"; };
+		E32B1BE823B06C29008A6E84 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS6.1.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +108,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E32B1BE923B06C29008A6E84 /* HealthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,6 +118,7 @@
 		E32B1B9823B065B8008A6E84 = {
 			isa = PBXGroup;
 			children = (
+				E32B1BE623B067FE008A6E84 /* README.md */,
 				E32B1BA323B065B8008A6E84 /* JinxChecker */,
 				E32B1BB923B065BB008A6E84 /* JinxChecker WatchKit App */,
 				E32B1BC823B065BE008A6E84 /* JinxChecker WatchKit Extension */,
@@ -167,6 +173,7 @@
 		E32B1BC823B065BE008A6E84 /* JinxChecker WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				E32B1BE723B06C29008A6E84 /* JinxChecker WatchKit Extension.entitlements */,
 				E32B1BC923B065BE008A6E84 /* ContentView.swift */,
 				E32B1BCB23B065BE008A6E84 /* HostingController.swift */,
 				E32B1BCD23B065BE008A6E84 /* ExtensionDelegate.swift */,
@@ -188,6 +195,7 @@
 		E32B1BE323B0661F008A6E84 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E32B1BE823B06C29008A6E84 /* HealthKit.framework */,
 				E32B1BE423B0661F008A6E84 /* HealthKit.framework */,
 			);
 			name = Frameworks;
@@ -495,6 +503,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "JinxChecker WatchKit Extension/JinxChecker WatchKit Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"JinxChecker WatchKit Extension/Preview Content\"";
 				DEVELOPMENT_TEAM = KDV5SVN7RH;
@@ -519,6 +528,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "JinxChecker WatchKit Extension/JinxChecker WatchKit Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"JinxChecker WatchKit Extension/Preview Content\"";
 				DEVELOPMENT_TEAM = KDV5SVN7RH;
