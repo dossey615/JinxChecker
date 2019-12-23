@@ -1,0 +1,648 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E32B1BA523B065B8008A6E84 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32B1BA423B065B8008A6E84 /* AppDelegate.swift */; };
+		E32B1BA723B065B8008A6E84 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32B1BA623B065B8008A6E84 /* SceneDelegate.swift */; };
+		E32B1BA923B065B8008A6E84 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32B1BA823B065B8008A6E84 /* ContentView.swift */; };
+		E32B1BAB23B065BB008A6E84 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E32B1BAA23B065BB008A6E84 /* Assets.xcassets */; };
+		E32B1BAE23B065BB008A6E84 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E32B1BAD23B065BB008A6E84 /* Preview Assets.xcassets */; };
+		E32B1BB123B065BB008A6E84 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E32B1BAF23B065BB008A6E84 /* LaunchScreen.storyboard */; };
+		E32B1BB623B065BB008A6E84 /* JinxChecker WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = E32B1BB523B065BB008A6E84 /* JinxChecker WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		E32B1BBC23B065BB008A6E84 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E32B1BBA23B065BB008A6E84 /* Interface.storyboard */; };
+		E32B1BBE23B065BD008A6E84 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E32B1BBD23B065BD008A6E84 /* Assets.xcassets */; };
+		E32B1BC523B065BE008A6E84 /* JinxChecker WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = E32B1BC423B065BE008A6E84 /* JinxChecker WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		E32B1BCA23B065BE008A6E84 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32B1BC923B065BE008A6E84 /* ContentView.swift */; };
+		E32B1BCC23B065BE008A6E84 /* HostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32B1BCB23B065BE008A6E84 /* HostingController.swift */; };
+		E32B1BCE23B065BE008A6E84 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32B1BCD23B065BE008A6E84 /* ExtensionDelegate.swift */; };
+		E32B1BD023B065BF008A6E84 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E32B1BCF23B065BF008A6E84 /* Assets.xcassets */; };
+		E32B1BD323B065BF008A6E84 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E32B1BD223B065BF008A6E84 /* Preview Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E32B1BB723B065BB008A6E84 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E32B1B9923B065B8008A6E84 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E32B1BB423B065BB008A6E84;
+			remoteInfo = "JinxChecker WatchKit App";
+		};
+		E32B1BC623B065BE008A6E84 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E32B1B9923B065B8008A6E84 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E32B1BC323B065BE008A6E84;
+			remoteInfo = "JinxChecker WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E32B1BDA23B065BF008A6E84 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				E32B1BC523B065BE008A6E84 /* JinxChecker WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E32B1BDE23B065BF008A6E84 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				E32B1BB623B065BB008A6E84 /* JinxChecker WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		E32B1BA123B065B8008A6E84 /* JinxChecker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JinxChecker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E32B1BA423B065B8008A6E84 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E32B1BA623B065B8008A6E84 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		E32B1BA823B065B8008A6E84 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E32B1BAA23B065BB008A6E84 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E32B1BAD23B065BB008A6E84 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E32B1BB023B065BB008A6E84 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E32B1BB223B065BB008A6E84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E32B1BB523B065BB008A6E84 /* JinxChecker WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "JinxChecker WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E32B1BBB23B065BB008A6E84 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		E32B1BBD23B065BD008A6E84 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E32B1BBF23B065BD008A6E84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E32B1BC423B065BE008A6E84 /* JinxChecker WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "JinxChecker WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E32B1BC923B065BE008A6E84 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E32B1BCB23B065BE008A6E84 /* HostingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostingController.swift; sourceTree = "<group>"; };
+		E32B1BCD23B065BE008A6E84 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		E32B1BCF23B065BF008A6E84 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E32B1BD223B065BF008A6E84 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E32B1BD423B065BF008A6E84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E32B1B9E23B065B8008A6E84 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E32B1BC123B065BE008A6E84 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E32B1B9823B065B8008A6E84 = {
+			isa = PBXGroup;
+			children = (
+				E32B1BA323B065B8008A6E84 /* JinxChecker */,
+				E32B1BB923B065BB008A6E84 /* JinxChecker WatchKit App */,
+				E32B1BC823B065BE008A6E84 /* JinxChecker WatchKit Extension */,
+				E32B1BA223B065B8008A6E84 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E32B1BA223B065B8008A6E84 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E32B1BA123B065B8008A6E84 /* JinxChecker.app */,
+				E32B1BB523B065BB008A6E84 /* JinxChecker WatchKit App.app */,
+				E32B1BC423B065BE008A6E84 /* JinxChecker WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E32B1BA323B065B8008A6E84 /* JinxChecker */ = {
+			isa = PBXGroup;
+			children = (
+				E32B1BA423B065B8008A6E84 /* AppDelegate.swift */,
+				E32B1BA623B065B8008A6E84 /* SceneDelegate.swift */,
+				E32B1BA823B065B8008A6E84 /* ContentView.swift */,
+				E32B1BAA23B065BB008A6E84 /* Assets.xcassets */,
+				E32B1BAF23B065BB008A6E84 /* LaunchScreen.storyboard */,
+				E32B1BB223B065BB008A6E84 /* Info.plist */,
+				E32B1BAC23B065BB008A6E84 /* Preview Content */,
+			);
+			path = JinxChecker;
+			sourceTree = "<group>";
+		};
+		E32B1BAC23B065BB008A6E84 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				E32B1BAD23B065BB008A6E84 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E32B1BB923B065BB008A6E84 /* JinxChecker WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				E32B1BBA23B065BB008A6E84 /* Interface.storyboard */,
+				E32B1BBD23B065BD008A6E84 /* Assets.xcassets */,
+				E32B1BBF23B065BD008A6E84 /* Info.plist */,
+			);
+			path = "JinxChecker WatchKit App";
+			sourceTree = "<group>";
+		};
+		E32B1BC823B065BE008A6E84 /* JinxChecker WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				E32B1BC923B065BE008A6E84 /* ContentView.swift */,
+				E32B1BCB23B065BE008A6E84 /* HostingController.swift */,
+				E32B1BCD23B065BE008A6E84 /* ExtensionDelegate.swift */,
+				E32B1BCF23B065BF008A6E84 /* Assets.xcassets */,
+				E32B1BD423B065BF008A6E84 /* Info.plist */,
+				E32B1BD123B065BF008A6E84 /* Preview Content */,
+			);
+			path = "JinxChecker WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		E32B1BD123B065BF008A6E84 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				E32B1BD223B065BF008A6E84 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E32B1BA023B065B8008A6E84 /* JinxChecker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E32B1BDF23B065BF008A6E84 /* Build configuration list for PBXNativeTarget "JinxChecker" */;
+			buildPhases = (
+				E32B1B9D23B065B8008A6E84 /* Sources */,
+				E32B1B9E23B065B8008A6E84 /* Frameworks */,
+				E32B1B9F23B065B8008A6E84 /* Resources */,
+				E32B1BDE23B065BF008A6E84 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E32B1BB823B065BB008A6E84 /* PBXTargetDependency */,
+			);
+			name = JinxChecker;
+			productName = JinxChecker;
+			productReference = E32B1BA123B065B8008A6E84 /* JinxChecker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E32B1BB423B065BB008A6E84 /* JinxChecker WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E32B1BDB23B065BF008A6E84 /* Build configuration list for PBXNativeTarget "JinxChecker WatchKit App" */;
+			buildPhases = (
+				E32B1BB323B065BB008A6E84 /* Resources */,
+				E32B1BDA23B065BF008A6E84 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E32B1BC723B065BE008A6E84 /* PBXTargetDependency */,
+			);
+			name = "JinxChecker WatchKit App";
+			productName = "JinxChecker WatchKit App";
+			productReference = E32B1BB523B065BB008A6E84 /* JinxChecker WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		E32B1BC323B065BE008A6E84 /* JinxChecker WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E32B1BD723B065BF008A6E84 /* Build configuration list for PBXNativeTarget "JinxChecker WatchKit Extension" */;
+			buildPhases = (
+				E32B1BC023B065BE008A6E84 /* Sources */,
+				E32B1BC123B065BE008A6E84 /* Frameworks */,
+				E32B1BC223B065BE008A6E84 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "JinxChecker WatchKit Extension";
+			productName = "JinxChecker WatchKit Extension";
+			productReference = E32B1BC423B065BE008A6E84 /* JinxChecker WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E32B1B9923B065B8008A6E84 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = "土居将史";
+				TargetAttributes = {
+					E32B1BA023B065B8008A6E84 = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+					E32B1BB423B065BB008A6E84 = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+					E32B1BC323B065BE008A6E84 = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+				};
+			};
+			buildConfigurationList = E32B1B9C23B065B8008A6E84 /* Build configuration list for PBXProject "JinxChecker" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E32B1B9823B065B8008A6E84;
+			productRefGroup = E32B1BA223B065B8008A6E84 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E32B1BA023B065B8008A6E84 /* JinxChecker */,
+				E32B1BB423B065BB008A6E84 /* JinxChecker WatchKit App */,
+				E32B1BC323B065BE008A6E84 /* JinxChecker WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E32B1B9F23B065B8008A6E84 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E32B1BB123B065BB008A6E84 /* LaunchScreen.storyboard in Resources */,
+				E32B1BAE23B065BB008A6E84 /* Preview Assets.xcassets in Resources */,
+				E32B1BAB23B065BB008A6E84 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E32B1BB323B065BB008A6E84 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E32B1BBE23B065BD008A6E84 /* Assets.xcassets in Resources */,
+				E32B1BBC23B065BB008A6E84 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E32B1BC223B065BE008A6E84 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E32B1BD323B065BF008A6E84 /* Preview Assets.xcassets in Resources */,
+				E32B1BD023B065BF008A6E84 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E32B1B9D23B065B8008A6E84 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E32B1BA523B065B8008A6E84 /* AppDelegate.swift in Sources */,
+				E32B1BA723B065B8008A6E84 /* SceneDelegate.swift in Sources */,
+				E32B1BA923B065B8008A6E84 /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E32B1BC023B065BE008A6E84 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E32B1BCC23B065BE008A6E84 /* HostingController.swift in Sources */,
+				E32B1BCA23B065BE008A6E84 /* ContentView.swift in Sources */,
+				E32B1BCE23B065BE008A6E84 /* ExtensionDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E32B1BB823B065BB008A6E84 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E32B1BB423B065BB008A6E84 /* JinxChecker WatchKit App */;
+			targetProxy = E32B1BB723B065BB008A6E84 /* PBXContainerItemProxy */;
+		};
+		E32B1BC723B065BE008A6E84 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E32B1BC323B065BE008A6E84 /* JinxChecker WatchKit Extension */;
+			targetProxy = E32B1BC623B065BE008A6E84 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E32B1BAF23B065BB008A6E84 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E32B1BB023B065BB008A6E84 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		E32B1BBA23B065BB008A6E84 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E32B1BBB23B065BB008A6E84 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E32B1BD523B065BF008A6E84 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E32B1BD623B065BF008A6E84 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E32B1BD823B065BF008A6E84 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"JinxChecker WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = KDV5SVN7RH;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "JinxChecker WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.project.JinxChecker.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Debug;
+		};
+		E32B1BD923B065BF008A6E84 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"JinxChecker WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = KDV5SVN7RH;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "JinxChecker WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.project.JinxChecker.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Release;
+		};
+		E32B1BDC23B065BF008A6E84 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KDV5SVN7RH;
+				IBSC_MODULE = JinxChecker_WatchKit_Extension;
+				INFOPLIST_FILE = "JinxChecker WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.project.JinxChecker.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Debug;
+		};
+		E32B1BDD23B065BF008A6E84 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KDV5SVN7RH;
+				IBSC_MODULE = JinxChecker_WatchKit_Extension;
+				INFOPLIST_FILE = "JinxChecker WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.project.JinxChecker.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Release;
+		};
+		E32B1BE023B065BF008A6E84 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"JinxChecker/Preview Content\"";
+				DEVELOPMENT_TEAM = KDV5SVN7RH;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = JinxChecker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.project.JinxChecker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E32B1BE123B065BF008A6E84 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"JinxChecker/Preview Content\"";
+				DEVELOPMENT_TEAM = KDV5SVN7RH;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = JinxChecker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.project.JinxChecker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E32B1B9C23B065B8008A6E84 /* Build configuration list for PBXProject "JinxChecker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E32B1BD523B065BF008A6E84 /* Debug */,
+				E32B1BD623B065BF008A6E84 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E32B1BD723B065BF008A6E84 /* Build configuration list for PBXNativeTarget "JinxChecker WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E32B1BD823B065BF008A6E84 /* Debug */,
+				E32B1BD923B065BF008A6E84 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E32B1BDB23B065BF008A6E84 /* Build configuration list for PBXNativeTarget "JinxChecker WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E32B1BDC23B065BF008A6E84 /* Debug */,
+				E32B1BDD23B065BF008A6E84 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E32B1BDF23B065BF008A6E84 /* Build configuration list for PBXNativeTarget "JinxChecker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E32B1BE023B065BF008A6E84 /* Debug */,
+				E32B1BE123B065BF008A6E84 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E32B1B9923B065B8008A6E84 /* Project object */;
+}
