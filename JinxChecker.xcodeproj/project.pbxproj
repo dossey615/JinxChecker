@@ -17,13 +17,14 @@
 		E32B1BBC23B065BB008A6E84 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E32B1BBA23B065BB008A6E84 /* Interface.storyboard */; };
 		E32B1BBE23B065BD008A6E84 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E32B1BBD23B065BD008A6E84 /* Assets.xcassets */; };
 		E32B1BC523B065BE008A6E84 /* JinxChecker WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = E32B1BC423B065BE008A6E84 /* JinxChecker WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		E32B1BCA23B065BE008A6E84 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32B1BC923B065BE008A6E84 /* ContentView.swift */; };
+		E32B1BCA23B065BE008A6E84 /* JinxCheckerContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32B1BC923B065BE008A6E84 /* JinxCheckerContentView.swift */; };
 		E32B1BCC23B065BE008A6E84 /* HostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32B1BCB23B065BE008A6E84 /* HostingController.swift */; };
 		E32B1BCE23B065BE008A6E84 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32B1BCD23B065BE008A6E84 /* ExtensionDelegate.swift */; };
 		E32B1BD023B065BF008A6E84 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E32B1BCF23B065BF008A6E84 /* Assets.xcassets */; };
 		E32B1BD323B065BF008A6E84 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E32B1BD223B065BF008A6E84 /* Preview Assets.xcassets */; };
 		E32B1BE523B0661F008A6E84 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E32B1BE423B0661F008A6E84 /* HealthKit.framework */; };
 		E32B1BE923B06C29008A6E84 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E32B1BE823B06C29008A6E84 /* HealthKit.framework */; };
+		E35EF61F23B1CFD700D0BED5 /* HealthData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35EF61E23B1CFD700D0BED5 /* HealthData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,7 +83,7 @@
 		E32B1BBD23B065BD008A6E84 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E32B1BBF23B065BD008A6E84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E32B1BC423B065BE008A6E84 /* JinxChecker WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "JinxChecker WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
-		E32B1BC923B065BE008A6E84 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E32B1BC923B065BE008A6E84 /* JinxCheckerContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JinxCheckerContentView.swift; sourceTree = "<group>"; };
 		E32B1BCB23B065BE008A6E84 /* HostingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostingController.swift; sourceTree = "<group>"; };
 		E32B1BCD23B065BE008A6E84 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		E32B1BCF23B065BF008A6E84 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -93,6 +94,7 @@
 		E32B1BE623B067FE008A6E84 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		E32B1BE723B06C29008A6E84 /* JinxChecker WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "JinxChecker WatchKit Extension.entitlements"; sourceTree = "<group>"; };
 		E32B1BE823B06C29008A6E84 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS6.1.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
+		E35EF61E23B1CFD700D0BED5 /* HealthData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,8 +175,9 @@
 		E32B1BC823B065BE008A6E84 /* JinxChecker WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				E35EF62423B1F55100D0BED5 /* Models */,
 				E32B1BE723B06C29008A6E84 /* JinxChecker WatchKit Extension.entitlements */,
-				E32B1BC923B065BE008A6E84 /* ContentView.swift */,
+				E32B1BC923B065BE008A6E84 /* JinxCheckerContentView.swift */,
 				E32B1BCB23B065BE008A6E84 /* HostingController.swift */,
 				E32B1BCD23B065BE008A6E84 /* ExtensionDelegate.swift */,
 				E32B1BCF23B065BF008A6E84 /* Assets.xcassets */,
@@ -199,6 +202,14 @@
 				E32B1BE423B0661F008A6E84 /* HealthKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E35EF62423B1F55100D0BED5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E35EF61E23B1CFD700D0BED5 /* HealthData.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -344,8 +355,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E35EF61F23B1CFD700D0BED5 /* HealthData.swift in Sources */,
 				E32B1BCC23B065BE008A6E84 /* HostingController.swift in Sources */,
-				E32B1BCA23B065BE008A6E84 /* ContentView.swift in Sources */,
+				E32B1BCA23B065BE008A6E84 /* JinxCheckerContentView.swift in Sources */,
 				E32B1BCE23B065BE008A6E84 /* ExtensionDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -34,5 +34,9 @@
 	<string>$(PRODUCT_MODULE_NAME).ExtensionDelegate</string>
 	<key>WKRunsIndependentlyOfCompanionApp</key>
 	<true/>
+	<key>NSHealthShareUsageDescription</key>
+	<string>use app for check jinx</string>
+	<key>NSHealthUpdateUsageDescription</key>
+	<string>use app for check jinx</string>
 </dict>
 </plist>

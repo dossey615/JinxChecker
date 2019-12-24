@@ -9,9 +9,10 @@
 import WatchKit
 import Foundation
 import SwiftUI
+import HealthKit
 
-class HostingController: WKHostingController<ContentView> {
-    override var body: ContentView {
-        return ContentView()
+class HostingController: WKHostingController<JinxCheckerContentView> {
+    override var body: JinxCheckerContentView {
+        return JinxCheckerContentView()
     }
 }
